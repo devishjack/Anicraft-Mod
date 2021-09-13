@@ -1,0 +1,300 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "SkillsandStats",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skillsand_stats",
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "Stats",
+      "type": "gui",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stats",
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "StatCheck",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stat_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SkillsandStatsRightClickedInAir",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skillsand_stats_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "OnPlayerSpawn",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "on_player_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "Skills",
+      "type": "gui",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skills",
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "GumoGumoNoPistol",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gumo_gumo_no_pistol",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "PistolPunch",
+      "type": "rangeditem",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pistol_punch",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "OpenSkillsPage",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_skills_page",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "Timer",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Defense",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Luck",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Speed",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Stat_Points",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Strength",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Timer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "40.0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "luffy-arm-stretch",
+      "files": [
+        "luffy-arm-stretch"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "luffy-arm-return",
+      "files": [
+        "luffy-arm-return"
+      ],
+      "category": "player",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.anicrafttwo.skillsand_stats": "Skillsand Stats",
+      "subtitles.luffy-arm-stretch": "",
+      "item.anicrafttwo.pistol_punch": "Pistol Punch",
+      "subtitles.luffy-arm-return": ""
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "StatsandSkills",
+        "children": []
+      },
+      {
+        "name": "One Piece",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "anicrafttwo",
+    "modName": "AniCrafttwo",
+    "version": "1.0.0",
+    "author": "devis, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.anicrafttwo",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

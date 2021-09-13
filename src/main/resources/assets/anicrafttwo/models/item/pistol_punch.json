@@ -1,0 +1,7 @@
+{
+  "parent": "anicrafttwo:custom/fist",
+  "textures": {
+    "1": "anicrafttwo:blocks/texture",
+    "particle": "anicrafttwo:items/fist"
+  }
+}
