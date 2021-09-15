@@ -73,7 +73,18 @@ public class AnicrafttwoModVariables {
 			nbt.putDouble("Speed", instance.Speed);
 			nbt.putDouble("Stat_Points", instance.Stat_Points);
 			nbt.putDouble("Strength", instance.Strength);
+			nbt.putDouble("SXP", instance.SXP);
+			nbt.putDouble("SXP_NextLevel", instance.SXP_NextLevel);
 			nbt.putDouble("Timer", instance.Timer);
+			nbt.putString("SkillFour", instance.SkillFour);
+			nbt.putString("SkillFourSave", instance.SkillFourSave);
+			nbt.putString("SkillOne", instance.SkillOne);
+			nbt.putString("SkillOneSave", instance.SkillOneSave);
+			nbt.putString("SkillThree", instance.SkillThree);
+			nbt.putString("SkillTwo", instance.SkillTwo);
+			nbt.putString("SkillTwoSave", instance.SkillTwoSave);
+			nbt.putString("SkillThreeSave", instance.SkillThreeSave);
+			nbt.putBoolean("FirstLoad", instance.FirstLoad);
 			return nbt;
 		}
 
@@ -85,7 +96,18 @@ public class AnicrafttwoModVariables {
 			instance.Speed = nbt.getDouble("Speed");
 			instance.Stat_Points = nbt.getDouble("Stat_Points");
 			instance.Strength = nbt.getDouble("Strength");
+			instance.SXP = nbt.getDouble("SXP");
+			instance.SXP_NextLevel = nbt.getDouble("SXP_NextLevel");
 			instance.Timer = nbt.getDouble("Timer");
+			instance.SkillFour = nbt.getString("SkillFour");
+			instance.SkillFourSave = nbt.getString("SkillFourSave");
+			instance.SkillOne = nbt.getString("SkillOne");
+			instance.SkillOneSave = nbt.getString("SkillOneSave");
+			instance.SkillThree = nbt.getString("SkillThree");
+			instance.SkillTwo = nbt.getString("SkillTwo");
+			instance.SkillTwoSave = nbt.getString("SkillTwoSave");
+			instance.SkillThreeSave = nbt.getString("SkillThreeSave");
+			instance.FirstLoad = nbt.getBoolean("FirstLoad");
 		}
 	}
 
@@ -95,7 +117,18 @@ public class AnicrafttwoModVariables {
 		public double Speed = 0;
 		public double Stat_Points = 0;
 		public double Strength = 0;
-		public double Timer = 40.0;
+		public double SXP = 0;
+		public double SXP_NextLevel = 1.0;
+		public double Timer = 60.0;
+		public String SkillFour = "";
+		public String SkillFourSave = "";
+		public String SkillOne = "Gomu Gomu No Pistol";
+		public String SkillOneSave = "Gomu Gomu No Pistol";
+		public String SkillThree = "";
+		public String SkillTwo = "";
+		public String SkillTwoSave = "";
+		public String SkillThreeSave = "";
+		public boolean FirstLoad = true;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				AnicrafttwoMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -133,7 +166,18 @@ public class AnicrafttwoModVariables {
 		clone.Speed = original.Speed;
 		clone.Stat_Points = original.Stat_Points;
 		clone.Strength = original.Strength;
+		clone.SXP = original.SXP;
+		clone.SXP_NextLevel = original.SXP_NextLevel;
 		clone.Timer = original.Timer;
+		clone.SkillFour = original.SkillFour;
+		clone.SkillFourSave = original.SkillFourSave;
+		clone.SkillOne = original.SkillOne;
+		clone.SkillOneSave = original.SkillOneSave;
+		clone.SkillThree = original.SkillThree;
+		clone.SkillTwo = original.SkillTwo;
+		clone.SkillTwoSave = original.SkillTwoSave;
+		clone.SkillThreeSave = original.SkillThreeSave;
+		clone.FirstLoad = original.FirstLoad;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -163,7 +207,18 @@ public class AnicrafttwoModVariables {
 					variables.Speed = message.data.Speed;
 					variables.Stat_Points = message.data.Stat_Points;
 					variables.Strength = message.data.Strength;
+					variables.SXP = message.data.SXP;
+					variables.SXP_NextLevel = message.data.SXP_NextLevel;
 					variables.Timer = message.data.Timer;
+					variables.SkillFour = message.data.SkillFour;
+					variables.SkillFourSave = message.data.SkillFourSave;
+					variables.SkillOne = message.data.SkillOne;
+					variables.SkillOneSave = message.data.SkillOneSave;
+					variables.SkillThree = message.data.SkillThree;
+					variables.SkillTwo = message.data.SkillTwo;
+					variables.SkillTwoSave = message.data.SkillTwoSave;
+					variables.SkillThreeSave = message.data.SkillThreeSave;
+					variables.FirstLoad = message.data.FirstLoad;
 				}
 			});
 			context.setPacketHandled(true);

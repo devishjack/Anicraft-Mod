@@ -10,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.anicrafttwo.item.SkillsandStatsItem;
+import net.mcreator.anicrafttwo.AnicrafttwoModVariables;
 import net.mcreator.anicrafttwo.AnicrafttwoMod;
 
 import java.util.Map;
@@ -38,17 +39,19 @@ public class OnPlayerSpawnProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(SkillsandStatsItem.block)) : false)) {
-			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(SkillsandStatsItem.block);
-				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-						((PlayerEntity) entity).container.func_234641_j_());
-			}
-		} else {
+		if ((((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).FirstLoad) == (true))) {
 			if (entity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(SkillsandStatsItem.block);
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
+			{
+				boolean _setval = (boolean) (false);
+				entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.FirstLoad = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}

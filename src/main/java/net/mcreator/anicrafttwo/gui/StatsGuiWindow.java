@@ -14,6 +14,7 @@ import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.anicrafttwo.AnicrafttwoModVariables;
 import net.mcreator.anicrafttwo.AnicrafttwoMod;
 
 import java.util.HashMap;
@@ -80,11 +81,16 @@ public class StatsGuiWindow extends ContainerScreen<StatsGui.GuiContainerMod> {
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "Stats", 69, 7, -12829636);
 		this.font.drawString(ms, "Stat Points:", 6, 16, -12829636);
-		this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("Stat_Points")) + "", 60, 16, -12829636);
-		this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("Speed")) + "", 60, 34, -12829636);
-		this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("Strength")) + "", 60, 70, -12829636);
-		this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("Defense")) + "", 60, 106, -12829636);
-		this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("Luck")) + "", 60, 142, -12829636);
+		this.font.drawString(ms, "" + ((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).Stat_Points) + "", 69, 16, -12829636);
+		this.font.drawString(ms, "" + ((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).Speed) + "", 60, 34, -12829636);
+		this.font.drawString(ms, "" + ((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).Strength) + "", 60, 70, -12829636);
+		this.font.drawString(ms, "" + ((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).Defense) + "", 60, 106, -12829636);
+		this.font.drawString(ms, "" + ((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).Luck) + "", 60, 142, -12829636);
 	}
 
 	@Override

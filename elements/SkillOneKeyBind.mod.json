@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Skill One Key Bind",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "SkillOneKeyBindOnKeyPressed"
+    }
+  }
+}

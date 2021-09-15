@@ -14,6 +14,9 @@
         "type": "button",
         "data": {
           "text": "Speed",
+          "onClick": {
+            "name": "SpeedIncrease"
+          },
           "width": 50,
           "height": 20,
           "name": "Speed",
@@ -50,13 +53,13 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Stat_Points>",
+          "text": "<VAR:Stat_Points>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Stat_Points>",
-          "x": 186,
+          "name": "<VAR:Stat_Points>",
+          "x": 195,
           "y": 53
         }
       },
@@ -64,6 +67,9 @@
         "type": "button",
         "data": {
           "text": "Strength",
+          "onClick": {
+            "name": "StrengthIncrease"
+          },
           "width": 50,
           "height": 20,
           "name": "Strength",
@@ -75,6 +81,9 @@
         "type": "button",
         "data": {
           "text": "Defense",
+          "onClick": {
+            "name": "DefenseIncrease"
+          },
           "width": 50,
           "height": 20,
           "name": "Defense",
@@ -86,6 +95,9 @@
         "type": "button",
         "data": {
           "text": "Luck",
+          "onClick": {
+            "name": "LuckIncrease"
+          },
           "width": 50,
           "height": 20,
           "name": "Luck",
@@ -96,12 +108,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Speed>",
+          "text": "<VAR:Speed>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Speed>",
+          "name": "<VAR:Speed>",
           "x": 186,
           "y": 71
         }
@@ -109,12 +121,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Strength>",
+          "text": "<VAR:Strength>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Strength>",
+          "name": "<VAR:Strength>",
           "x": 186,
           "y": 107
         }
@@ -122,12 +134,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Defense>",
+          "text": "<VAR:Defense>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Defense>",
+          "name": "<VAR:Defense>",
           "x": 186,
           "y": 143
         }
@@ -135,12 +147,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Luck>",
+          "text": "<VAR:Luck>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Luck>",
+          "name": "<VAR:Luck>",
           "x": 186,
           "y": 179
         }

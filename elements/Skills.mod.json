@@ -22,6 +22,78 @@
           "x": 186,
           "y": 44
         }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Type first skill here",
+          "width": 120,
+          "height": 20,
+          "name": "Skill1",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Type skill 2 here",
+          "width": 120,
+          "height": 20,
+          "name": "Skill2",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Type skill 3 here",
+          "width": 120,
+          "height": 20,
+          "name": "Skill3",
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Type skill 4 here",
+          "width": 120,
+          "height": 20,
+          "name": "Skill4",
+          "x": 132,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Set Skills",
+          "onClick": {
+            "name": "SetSkillSave"
+          },
+          "width": 75,
+          "height": 20,
+          "name": "Set Skills",
+          "x": 132,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "List Skills",
+          "onClick": {
+            "name": "SkillListOnePiece"
+          },
+          "width": 80,
+          "height": 20,
+          "name": "List Skills",
+          "x": 213,
+          "y": 179
+        }
       }
     ],
     "gridSettings": {

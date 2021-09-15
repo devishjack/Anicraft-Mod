@@ -22,7 +22,11 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.ScreenManager;
 
+import net.mcreator.anicrafttwo.procedures.StrengthIncreaseProcedure;
+import net.mcreator.anicrafttwo.procedures.SpeedIncreaseProcedure;
 import net.mcreator.anicrafttwo.procedures.OpenSkillsPageProcedure;
+import net.mcreator.anicrafttwo.procedures.LuckIncreaseProcedure;
+import net.mcreator.anicrafttwo.procedures.DefenseIncreaseProcedure;
 import net.mcreator.anicrafttwo.AnicrafttwoModElements;
 
 import java.util.function.Supplier;
@@ -175,6 +179,34 @@ public class StatsGui extends AnicrafttwoModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				SpeedIncreaseProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				StrengthIncreaseProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 2) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				DefenseIncreaseProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 3) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				LuckIncreaseProcedure.executeProcedure($_dependencies);
+			}
+		}
 		if (buttonID == 4) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();

@@ -22,8 +22,6 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.anicrafttwo.procedures.SkillListOnePieceProcedure;
-import net.mcreator.anicrafttwo.procedures.SetSkillSaveProcedure;
 import net.mcreator.anicrafttwo.AnicrafttwoModElements;
 
 import java.util.function.Supplier;
@@ -31,11 +29,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @AnicrafttwoModElements.ModElement.Tag
-public class SkillsGui extends AnicrafttwoModElements.ModElement {
+public class SkillsListGui extends AnicrafttwoModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public SkillsGui(AnicrafttwoModElements instance) {
-		super(instance, 6);
+	public SkillsListGui(AnicrafttwoModElements instance) {
+		super(instance, 11);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -46,12 +44,12 @@ public class SkillsGui extends AnicrafttwoModElements.ModElement {
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-			event.getRegistry().register(containerType.setRegistryName("skills"));
+			event.getRegistry().register(containerType.setRegistryName("skills_list"));
 		}
 	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, SkillsGuiWindow::new));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, SkillsListGuiWindow::new));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -176,25 +174,6 @@ public class SkillsGui extends AnicrafttwoModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("guistate", guistate);
-				SetSkillSaveProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				SkillListOnePieceProcedure.executeProcedure($_dependencies);
-			}
-		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

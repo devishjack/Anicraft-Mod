@@ -116,10 +116,6 @@
             "type": "entity"
           },
           {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -200,6 +196,257 @@
         ]
       },
       "path": "~/One Piece"
+    },
+    {
+      "name": "SkillsList",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skills_list",
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SkillListOnePiece",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_list_one_piece",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SkillOneKeyBindOnKeyPressed",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_one_key_bind_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SkillOneKeyBind",
+      "type": "keybind",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_one_key_bind",
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SkillPointIncrease",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_point_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SpeedIncrease",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "speed_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "DefenseIncrease",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "defense_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "LuckIncrease",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "luck_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "StrengthIncrease",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strength_increase",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SetSkillSave",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "set_skill_save",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "GomuGomuNoMi",
+      "type": "food",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gomu_gomu_no_mi",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "RubberMan",
+      "type": "achievement",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubber_man",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "TheBlueSea",
+      "type": "dimension",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_blue_sea",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "EnterTheBlueSea",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enter_the_blue_sea",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
     }
   ],
   "variable_elements": [
@@ -234,10 +481,76 @@
       "value": "0"
     },
     {
+      "name": "SXP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SXP_NextLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
       "name": "Timer",
       "type": "number",
       "scope": "player_persistent",
-      "value": "40.0"
+      "value": "60.0"
+    },
+    {
+      "name": "SkillFour",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "SkillFourSave",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "SkillOne",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "Gomu Gomu No Pistol"
+    },
+    {
+      "name": "SkillOneSave",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "Gomu Gomu No Pistol"
+    },
+    {
+      "name": "SkillThree",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "SkillTwo",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "SkillTwoSave",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "SkillThreeSave",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "FirstLoad",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
     }
   ],
   "sound_elements": [
@@ -260,9 +573,14 @@
   ],
   "language_map": {
     "en_us": {
+      "item.anicrafttwo.the_blue_sea": "The Blue Sea Portal Igniter",
       "item.anicrafttwo.skillsand_stats": "Skillsand Stats",
       "subtitles.luffy-arm-stretch": "",
       "item.anicrafttwo.pistol_punch": "Pistol Punch",
+      "advancements.rubber_man.title": "Rubber Man",
+      "item.anicrafttwo.gomu_gomu_no_mi": "Gomu Gomu No Mi",
+      "advancements.rubber_man.descr": "You ate the Gomu Gomu No Mi",
+      "key.anicrafttwo.skill_one_key_bind": "Skill One Key Bind",
       "subtitles.luffy-arm-return": ""
     }
   },

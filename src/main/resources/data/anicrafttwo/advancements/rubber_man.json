@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "anicrafttwo:gomu_gomu_no_mi"
+    },
+    "title": {
+      "translate": "advancements.rubber_man.title"
+    },
+    "description": {
+      "translate": "advancements.rubber_man.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rubber_man": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "anicrafttwo:gomu_gomu_no_mi"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10000
+  }
+}
