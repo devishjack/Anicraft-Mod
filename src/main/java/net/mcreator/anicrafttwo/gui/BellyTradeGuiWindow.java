@@ -18,12 +18,12 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class SkillsListGuiWindow extends ContainerScreen<SkillsListGui.GuiContainerMod> {
+public class BellyTradeGuiWindow extends ContainerScreen<BellyTradeGui.GuiContainerMod> {
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
-	private final static HashMap guistate = SkillsListGui.guistate;
-	public SkillsListGuiWindow(SkillsListGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
+	private final static HashMap guistate = BellyTradeGui.guistate;
+	public BellyTradeGuiWindow(BellyTradeGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -33,7 +33,7 @@ public class SkillsListGuiWindow extends ContainerScreen<SkillsListGui.GuiContai
 		this.xSize = 176;
 		this.ySize = 166;
 	}
-	private static final ResourceLocation texture = new ResourceLocation("anicrafttwo:textures/skills_list.png");
+	private static final ResourceLocation texture = new ResourceLocation("anicrafttwo:textures/belly_trade.png");
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
@@ -69,11 +69,6 @@ public class SkillsListGuiWindow extends ContainerScreen<SkillsListGui.GuiContai
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "One Piece", 60, 7, -12829636);
-		this.font.drawString(ms, "Gumo Gumo No Pistol", 6, 25, -12829636);
-		this.font.drawString(ms, "Gomu Gomu No Gattling", 6, 43, -12829636);
-		this.font.drawString(ms, "Gomu Gomu No Rocket", 6, 61, -12829636);
-		this.font.drawString(ms, "Gomu Gomu No Bazooka", 6, 79, -12829636);
 	}
 
 	@Override

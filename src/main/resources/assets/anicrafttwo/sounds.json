@@ -16,5 +16,32 @@
         "stream": false
       }
     ]
+  },
+  "hit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anicrafttwo:hit",
+        "stream": false
+      }
+    ]
+  },
+  "luffy-arm-return2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anicrafttwo:luffy-arm-return2",
+        "stream": false
+      }
+    ]
+  },
+  "gumgumrocket": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "anicrafttwo:gumgumrocket",
+        "stream": false
+      }
+    ]
   }
 }

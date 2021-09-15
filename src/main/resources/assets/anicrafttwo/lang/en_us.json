@@ -1,11 +1,25 @@
 {
   "item.anicrafttwo.the_blue_sea": "The Blue Sea Portal Igniter",
+  "entity.anicrafttwo.eiichiro_oda": "Eiichiro Oda",
   "item.anicrafttwo.skillsand_stats": "Skillsand Stats",
-  "subtitles.luffy-arm-stretch": "",
+  "item.anicrafttwo.belly": "Belly",
+  "key.anicrafttwo.skill_three_key_bind": "Skill Three Key Bind",
   "item.anicrafttwo.pistol_punch": "Pistol Punch",
   "advancements.rubber_man.title": "Rubber Man",
-  "item.anicrafttwo.gomu_gomu_no_mi": "Gomu Gomu No Mi",
+  "item.anicrafttwo.the_blue_sea_orb": "The Blue Sea Orb",
   "advancements.rubber_man.descr": "You ate the Gomu Gomu No Mi",
+  "item.anicrafttwo.eiichiro_oda_spawn_egg": "Eiichiro Oda Spawn Egg",
+  "item.anicrafttwo.gum_gum_gattling": "Gum Gum Gattling",
+  "item.anicrafttwo.gum_gum_rocket": "Gum Gum Rocket",
+  "subtitles.gumgumrocket": "",
+  "subtitles.luffy-arm-return": "",
+  "key.anicrafttwo.skill_four_key_bind": "Skill Four Key Bind",
+  "biome.anicrafttwo.jungle_island": "Jungle Island",
+  "subtitles.luffy-arm-stretch": "",
+  "key.anicrafttwo.skill_two_key_bind": "Skill Two Key Bind",
+  "subtitles.luffy-arm-return2": "",
+  "item.anicrafttwo.gomu_gomu_no_mi": "Gomu Gomu No Mi",
+  "item.anicrafttwo.gum_bazooka": "Gum Bazooka",
   "key.anicrafttwo.skill_one_key_bind": "Skill One Key Bind",
-  "subtitles.luffy-arm-return": ""
+  "subtitles.hit": ""
 }

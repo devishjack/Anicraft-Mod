@@ -13,31 +13,31 @@ import net.mcreator.anicrafttwo.AnicrafttwoMod;
 import java.util.Map;
 import java.util.HashMap;
 
-public class SkillOneKeyBindOnKeyPressedProcedure {
+public class SkillFourKeyBindOnKeyPressedProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				AnicrafttwoMod.LOGGER.warn("Failed to load dependency entity for procedure SkillOneKeyBindOnKeyPressed!");
+				AnicrafttwoMod.LOGGER.warn("Failed to load dependency entity for procedure SkillFourKeyBindOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				AnicrafttwoMod.LOGGER.warn("Failed to load dependency x for procedure SkillOneKeyBindOnKeyPressed!");
+				AnicrafttwoMod.LOGGER.warn("Failed to load dependency x for procedure SkillFourKeyBindOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				AnicrafttwoMod.LOGGER.warn("Failed to load dependency y for procedure SkillOneKeyBindOnKeyPressed!");
+				AnicrafttwoMod.LOGGER.warn("Failed to load dependency y for procedure SkillFourKeyBindOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				AnicrafttwoMod.LOGGER.warn("Failed to load dependency z for procedure SkillOneKeyBindOnKeyPressed!");
+				AnicrafttwoMod.LOGGER.warn("Failed to load dependency z for procedure SkillFourKeyBindOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				AnicrafttwoMod.LOGGER.warn("Failed to load dependency world for procedure SkillOneKeyBindOnKeyPressed!");
+				AnicrafttwoMod.LOGGER.warn("Failed to load dependency world for procedure SkillFourKeyBindOnKeyPressed!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -46,7 +46,7 @@ public class SkillOneKeyBindOnKeyPressedProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillOneSave).contains("Gomu Gomu No Pistol"))) {
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillFourSave).contains("Gomu Gomu No Pistol"))) {
 			if ((((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -64,7 +64,7 @@ public class SkillOneKeyBindOnKeyPressedProcedure {
 				}
 			}
 		} else if ((((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillOneSave).contains("Gomu Gomu No bazooka"))) {
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillFourSave).contains("Gomu Gomu No bazooka"))) {
 			if ((((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -82,7 +82,7 @@ public class SkillOneKeyBindOnKeyPressedProcedure {
 				}
 			}
 		} else if ((((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillOneSave).contains("Gomu Gomu No Gattling"))) {
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillFourSave).contains("Gomu Gomu No Gattling"))) {
 			if ((((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -100,7 +100,7 @@ public class SkillOneKeyBindOnKeyPressedProcedure {
 				}
 			}
 		} else if ((((entity.getCapability(AnicrafttwoModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillOneSave).contains("Gomu Gomu No Rocket"))) {
+				.orElse(new AnicrafttwoModVariables.PlayerVariables())).SkillFourSave).contains("Gomu Gomu No Rocket"))) {
 			if ((((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 					? ((ServerPlayerEntity) entity).getAdvancements()
 							.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()

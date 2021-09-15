@@ -35,6 +35,45 @@
           "x": 132,
           "y": 62
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gomu Gomu No Gattling",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Gomu Gomu No Gattling",
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gomu Gomu No Rocket",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Gomu Gomu No Rocket",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gomu Gomu No Bazooka",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Gomu Gomu No Bazooka",
+          "x": 132,
+          "y": 116
+        }
       }
     ],
     "gridSettings": {

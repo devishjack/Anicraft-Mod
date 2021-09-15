@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Skill Four Key Bind",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SkillFourKeyBindOnKeyPressed"
+    }
+  }
+}

@@ -133,7 +133,7 @@
           }
         ]
       },
-      "path": "~/One Piece"
+      "path": "~/One Piece/Skills"
     },
     {
       "name": "PistolPunch",
@@ -143,7 +143,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pistol_punch",
-      "path": "~/One Piece"
+      "path": "~/One Piece/Skills"
     },
     {
       "name": "OpenSkillsPage",
@@ -447,6 +447,411 @@
         ]
       },
       "path": "~/One Piece"
+    },
+    {
+      "name": "EiichiroOda",
+      "type": "livingentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eiichiro_oda",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "TheBlueSeaOrb",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_blue_sea_orb",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "EiichiroOdaEntityDies",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eiichiro_oda_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "JungleIsland",
+      "type": "biome",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jungle_island",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "EiichiroOdaPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eiichiro_oda_player_collides_with_this_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "GumBazooka",
+      "type": "rangeditem",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gum_bazooka",
+      "path": "~/One Piece/Skills"
+    },
+    {
+      "name": "GumGumBazooka",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gum_gum_bazooka",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece/Skills"
+    },
+    {
+      "name": "GumGumGattling",
+      "type": "rangeditem",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gum_gum_gattling",
+      "path": "~/One Piece/Skills"
+    },
+    {
+      "name": "GumoGumoNoGattling",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gumo_gumo_no_gattling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece/Skills"
+    },
+    {
+      "name": "GumGumRocket",
+      "type": "rangeditem",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gum_gum_rocket",
+      "path": "~/One Piece/Skills"
+    },
+    {
+      "name": "UponBulletHit",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upon_bullet_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/One Piece/Skills"
+    },
+    {
+      "name": "GomuGomuNoRocket",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gomu_gomu_no_rocket",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece/Skills"
+    },
+    {
+      "name": "Belly",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "belly",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "BellyTrade",
+      "type": "gui",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "belly_trade",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "SkillTwoKeyBind",
+      "type": "keybind",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_two_key_bind",
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SkillTwoKeyBindOnKeyPressed",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_two_key_bind_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkillThreeKeyBindOnKeyPressed",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_three_key_bind_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkillThreeKeyBind",
+      "type": "keybind",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_three_key_bind",
+      "path": "~/StatsandSkills"
+    },
+    {
+      "name": "SkillFourKeyBindOnKeyPressed",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_four_key_bind_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkillFourKeyBind",
+      "type": "keybind",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skill_four_key_bind",
+      "path": "~/StatsandSkills"
     }
   ],
   "variable_elements": [
@@ -551,6 +956,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "true"
+    },
+    {
+      "name": "IsButtonDown",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -569,19 +980,57 @@
       ],
       "category": "player",
       "subtitle": ""
+    },
+    {
+      "name": "hit",
+      "files": [
+        "hit"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "luffy-arm-return2",
+      "files": [
+        "luffy-arm-return2"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "gumgumrocket",
+      "files": [
+        "gumgumrocket"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "item.anicrafttwo.the_blue_sea": "The Blue Sea Portal Igniter",
+      "entity.anicrafttwo.eiichiro_oda": "Eiichiro Oda",
       "item.anicrafttwo.skillsand_stats": "Skillsand Stats",
-      "subtitles.luffy-arm-stretch": "",
+      "item.anicrafttwo.belly": "Belly",
+      "key.anicrafttwo.skill_three_key_bind": "Skill Three Key Bind",
       "item.anicrafttwo.pistol_punch": "Pistol Punch",
       "advancements.rubber_man.title": "Rubber Man",
-      "item.anicrafttwo.gomu_gomu_no_mi": "Gomu Gomu No Mi",
+      "item.anicrafttwo.the_blue_sea_orb": "The Blue Sea Orb",
       "advancements.rubber_man.descr": "You ate the Gomu Gomu No Mi",
+      "item.anicrafttwo.eiichiro_oda_spawn_egg": "Eiichiro Oda Spawn Egg",
+      "item.anicrafttwo.gum_gum_gattling": "Gum Gum Gattling",
+      "item.anicrafttwo.gum_gum_rocket": "Gum Gum Rocket",
+      "subtitles.gumgumrocket": "",
+      "subtitles.luffy-arm-return": "",
+      "key.anicrafttwo.skill_four_key_bind": "Skill Four Key Bind",
+      "biome.anicrafttwo.jungle_island": "Jungle Island",
+      "subtitles.luffy-arm-stretch": "",
+      "key.anicrafttwo.skill_two_key_bind": "Skill Two Key Bind",
+      "subtitles.luffy-arm-return2": "",
+      "item.anicrafttwo.gomu_gomu_no_mi": "Gomu Gomu No Mi",
+      "item.anicrafttwo.gum_bazooka": "Gum Bazooka",
       "key.anicrafttwo.skill_one_key_bind": "Skill One Key Bind",
-      "subtitles.luffy-arm-return": ""
+      "subtitles.hit": ""
     }
   },
   "foldersRoot": {
@@ -593,7 +1042,12 @@
       },
       {
         "name": "One Piece",
-        "children": []
+        "children": [
+          {
+            "name": "Skills",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -611,6 +1065,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.anicrafttwo",
     "lockBaseModFiles": false
   },

@@ -85,6 +85,7 @@ public class AnicrafttwoModVariables {
 			nbt.putString("SkillTwoSave", instance.SkillTwoSave);
 			nbt.putString("SkillThreeSave", instance.SkillThreeSave);
 			nbt.putBoolean("FirstLoad", instance.FirstLoad);
+			nbt.putBoolean("IsButtonDown", instance.IsButtonDown);
 			return nbt;
 		}
 
@@ -108,6 +109,7 @@ public class AnicrafttwoModVariables {
 			instance.SkillTwoSave = nbt.getString("SkillTwoSave");
 			instance.SkillThreeSave = nbt.getString("SkillThreeSave");
 			instance.FirstLoad = nbt.getBoolean("FirstLoad");
+			instance.IsButtonDown = nbt.getBoolean("IsButtonDown");
 		}
 	}
 
@@ -129,6 +131,7 @@ public class AnicrafttwoModVariables {
 		public String SkillTwoSave = "";
 		public String SkillThreeSave = "";
 		public boolean FirstLoad = true;
+		public boolean IsButtonDown = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				AnicrafttwoMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -179,6 +182,7 @@ public class AnicrafttwoModVariables {
 		clone.SkillThreeSave = original.SkillThreeSave;
 		clone.FirstLoad = original.FirstLoad;
 		if (!event.isWasDeath()) {
+			clone.IsButtonDown = original.IsButtonDown;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -219,6 +223,7 @@ public class AnicrafttwoModVariables {
 					variables.SkillTwoSave = message.data.SkillTwoSave;
 					variables.SkillThreeSave = message.data.SkillThreeSave;
 					variables.FirstLoad = message.data.FirstLoad;
+					variables.IsButtonDown = message.data.IsButtonDown;
 				}
 			});
 			context.setPacketHandled(true);

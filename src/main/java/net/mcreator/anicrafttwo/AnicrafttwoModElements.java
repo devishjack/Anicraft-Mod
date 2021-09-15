@@ -50,6 +50,11 @@ public class AnicrafttwoModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("anicrafttwo", "luffy-arm-stretch")));
 		sounds.put(new ResourceLocation("anicrafttwo", "luffy-arm-return"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("anicrafttwo", "luffy-arm-return")));
+		sounds.put(new ResourceLocation("anicrafttwo", "hit"), new net.minecraft.util.SoundEvent(new ResourceLocation("anicrafttwo", "hit")));
+		sounds.put(new ResourceLocation("anicrafttwo", "luffy-arm-return2"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("anicrafttwo", "luffy-arm-return2")));
+		sounds.put(new ResourceLocation("anicrafttwo", "gumgumrocket"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("anicrafttwo", "gumgumrocket")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("anicrafttwo").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
